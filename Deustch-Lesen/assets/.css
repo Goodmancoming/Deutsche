@@ -1,0 +1,50 @@
+.pcbg{
+    background-image: url(pc.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-clip: border-box;
+}
+.brightpcbg{
+    background-image: url(brightpc.png) !important;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-clip: border-box;
+}
+.lexiconbg, .literaturenbg, .submissionbg{
+    backdrop-filter: opacity(10%) !important    ;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-clip: border-box;
+    background-color: rgb(60, 40, 60);
+    max-width: 20%;
+    border: transparent solid 1px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    aspect-ratio: 3 / 4 !important
+}
+/*
+.lexiconbg::before, .literaturenbg::before, .submissionbg::before{
+    content: "";
+    inset: 0;
+    background: url('your-image.jpg') center/cover;
+    filter: opacity(0.5);
+    z-index: -1; 
+}
+ .lexiconbg{
+    background-image: url(lexicon.png) !important;
+}
+.literaturenbg{
+    background-image: url(literaturen.png) !important;
+}
+.submissionbg{
+    background-image: url(submission.png) !important;
+} */

@@ -1,0 +1,29 @@
+--command sql di phpmyadmin
+--link phpmyadmin : http://localhost/phpmyadmin/
+--link localhost  : http://localhost/dashboard/
+--sebelum akses link, nyalakan apache dan sql di control panel xampp
+--gknyala = gk bisa
+--
+---------------------------------------------------------<words table (menyimpan words)
+-- CREATE TABLE words (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     german_word VARCHAR(255) UNIQUE NOT NULL,
+--     english_translation VARCHAR(255) NOT NULL,
+--     indo_translation VARCHAR(255) NOT NULL,
+--     more_description TEXT
+-- );
+
+---------------------------------------------------------<categories table (nyimpen hastag)
+-- CREATE TABLE categories (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     category_name VARCHAR(100) UNIQUE NOT NULL
+-- );
+
+---------------------------------------------------------<Pivot table (word_category) (gabungin antara words dan categories)
+-- CREATE TABLE word_category (
+--     word_id INT NOT NULL,
+--     category_id INT NOT NULL,
+--     PRIMARY KEY (word_id, category_id),
+--     FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE,
+--     FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+-- );
