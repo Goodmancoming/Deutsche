@@ -9,7 +9,7 @@
 
 </head>
 <body class="pcbg">
-    <div style=" margin-left:auto; margin right:auto;: width:100%; height: 100vh; justify-content: center; align-items: center;">
+    <div style=" margin-left:auto; margin-right:auto; width:100%; height: 100vh; justify-content: center; align-items:center;">
             <center>
                 <h2 style="color:  white; font-family: 'Courier New', Courier, monospace; margin-top: 100px; font-size: 100px; font-weight:lighter;">
                     [:SOMETHING WENT WRONG:] 
